@@ -5,15 +5,16 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
     $(document).ready(function(){
-      $("p").click(function()
+      $("button").click(function()
       {
-        $(this).toggle();
+        $("p").toggle();
       });
     });
   </script>  
 </head>
 <body>
-  <p>If you click on me, I will disappear.</p>
-  <p>You may toggle the text on and off</p> 
+  <button>Toggle</button>
+  <p>A block of text.</p>
+  <p>Learn C Sharp!</p> 
 </body>
 </html>
