@@ -5,16 +5,19 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
     $(document).ready(function(){
-      $("button").click(function()
-      {
-        $("p").toggle();
-      });
+      var opt3=$("option[value='THREE']");
+      opt3.prop("selected", true);
+      if(opt3.prop("selected")===true)
+      { $("#out").text(opt3.val() + " Selected");}
     });
   </script>  
 </head>
 <body>
-  <button>Toggle</button>
-  <p>A block of text.</p>
-  <p>Learn C Sharp!</p> 
+  <form>
+    <select>
+      <option value="ONE">ONE<option value="TWO">TWO<option value="THREE">THREE
+    </select>
+  </form>
+  <p>Output: <span id="out"></span></p>
 </body>
 </html>
